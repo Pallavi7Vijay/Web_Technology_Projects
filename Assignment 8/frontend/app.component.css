@@ -1,0 +1,253 @@
+.food_image{
+    width:115px;
+    height:115px;
+    padding: 5px;
+}
+
+.carouselimage{
+    width:16em;
+    height:16em;
+}
+
+.navButton {
+    --bs-btn-hover-color: black;
+}
+.navButton :focus {
+    color: black;
+    /* background-color: #ffffff; */
+}
+button.navButton.btn :active, button.navButton.btn :target,  button.navButton.btn:focus,  button.navButton.btn:active:focus{
+    border-color: black;
+}
+
+body {
+    background: none;
+}
+
+.content {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.green {
+    border: none;
+  }
+  
+  .red {
+    border-color: black;
+  }
+
+.mat-tab-label-content { color: #000000 !important; } 
+#one {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+.alignCenter{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#divContainer {
+    display: flex;
+    top: .5em;
+    position: relative;
+}
+.thStyle {
+    padding-top: 16px;
+    background-color: #4f6fad;
+    color: black;
+    font-family: sans-serif;
+}
+#two {
+    width: 50%;
+    left: 1em;
+    position: relative;
+  }
+.hidden{
+    display: none;
+}
+#three{
+    width:50%;
+}
+.customLine {
+    height: 1px;
+    background: #7f8eae;
+    margin-right: 59px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left:3em;
+}
+.headerStyle{
+    font-size:18px;
+    font-weight:bolder;
+    margin-top:15px;
+}
+.valStyle{
+    color:gray;
+    margin-top:7px;
+    font-size: 15px;
+}
+.photos {
+    height: 430px;
+    border: solid 1px gray;
+    position: relative;
+    left: 0.4em;
+  }
+.photos1 {
+    height: 430px;
+    margin-left: 1em;
+    border: solid 1px gray;
+}
+
+#four {
+    display: flex;
+    margin-top: 38px;
+    left: 1em;
+    position: relative;
+  }
+
+.span{
+    text-align:center;
+}
+.labelColor{
+    color: #4f6fad;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.required{
+    color: red;
+    vertical-align: text-top;   
+}
+.textField{
+    height:32px;
+    border: 3px solid #e6e6e6;
+}
+.imageStyle{
+    width: 800px;
+    height: 180px;
+    object-fit: cover;
+    object-position: 0% 102%;
+}
+.selected{
+    border-radius: 14px !important;
+    font-size: 15px !important;
+    color: black !important;
+    font-family: revert;
+    border: 2px solid !important;
+
+}
+.notSelected{
+    border-radius: 14px  !important;
+    color: black !important;
+    font-size: 15px !important;
+    font-family: revert !important;
+    border: none !important;
+    top: 4% !important;
+    position: relative !important;
+
+}
+.searchCard{
+    margin-top: 50px;
+    position: relative;
+    width: 800px;
+    height: 650px;
+    border: 5px solid #cbcbd1;
+    background-color: #FEFFFE;
+    margin-bottom: 120px;   
+}
+.paddingLeft{
+    padding-left: 50px;
+}
+.btn {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    font-weight: lighter;
+}
+.clrBlue{
+    background-color: #4E6FAF;
+}
+.clrYellow{
+    background-color: #FEB605;
+}
+.clrBlue:hover{
+    background-color: #273b63;
+}
+.clrYellow:hover{
+    background-color:#c68f03;
+}
+select {
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid rgb(119, 118, 118);
+}
+.top{
+    top:1em;
+    position: relative;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+td,th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.open{
+    background: #418109;
+    width: 100px;
+    border-radius: 14px;
+    padding: 6px;
+    color: black;
+    text-align: center;
+    height: 22px;
+    margin-top: 1px;
+    padding-top: 12px;
+}
+.close{
+    background: red;
+    width: 100px;
+    border-radius: 14px;
+    padding: 6px;
+    color: black;
+    text-align: center;
+    height: 22px;
+    margin-top: 1px;
+    padding-top: 12px;      
+}
+th {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+#dynamicCard {
+    border: 5px solid #D4D4D5;
+    background-color: #FEFFFE;
+    margin: 0 auto;
+  }
+.p1{
+    font-weight: bolder;
+font-size: 26px;
+bottom: 1em;
+position: relative;
+}
+.pDiv{
+    position: absolute;
+    bottom: 30em;
+    color: white;
+    left: 4em;
+    font-family: sans-serif;
+}
+.p2{
+    font-size: 19px;
+}
+td a:hover{
+    color: #e6e6e6;
+}

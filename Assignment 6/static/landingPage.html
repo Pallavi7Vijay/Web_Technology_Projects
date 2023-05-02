@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 6</title>
+</head>
+<body style="font-family: sans-serif;display: flex;justify-content: center;align-items: center;background-color: #E7E7E6;flex-direction: column;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/script.js"></script>
+    <div style="width: 800px;position: relative;border: 5px solid #D4D4D5;margin-top: 50px;background-color: #FEFFFE;margin-bottom: 120px;height: 650px;">
+        <div>
+            <img src="static/banner.jpeg" style="object-position: 0% 102%;object-fit: cover;width: 800px;height: 180px;">
+            <span style="left: 48px;top: 15px; position: absolute;  font-size: 30px; color: white;  font-family: sans-serif;">Business Search</span>
+            <span style="position: absolute; font-size: 23px; top: 77px; left: 48px; color: white;">Fill out the form to get businesses near you!</span>
+        </div>
+        <div style="margin-left: 70px; top: 30px; position: relative;">
+            <div>
+                <label>Keyword <span class='required'>*</span></label>
+                <label><input required id="keyWord" style="width: 660px;" ></label>
+            </div>
+            <div style="top: 11px; position: relative;">
+                <label style="margin-right: 200px;" for="distance">Distance(miles)</label>
+                <label for="category">Category <span class='required'>*</span></label>
+                <p>
+                    <input id="distance" type="number" name="distance" style=" margin-right: 145px;" required value=10 >
+                    <select class="category" id="category">
+                        <option value="all">Default</option>
+                        <option value="art-entertainment">Arts & Entertainment</option>
+                        <option value="health">Health & Medical</option>
+                        <option value="hotelstravell">Hotels & Travel</option>
+                        <option value="food">Food</option>
+                        <option value="professional">Professional Services</option>
+                    </select>
+                </p>
+            </div>
+            <div style="top: 15px; position: relative;">
+                <label>Location <span class='required'>*</span></label>
+                <span><input id="location" style="width: 660px;" required></span>
+            </div>
+            <div style="height: 2px;background: #97A8CC;margin-right: 59px;margin-top: 30px;margin-bottom: 20px;"></div>
+            <div style="display:inline-flex;"><p>Want us to auto-detect your location? Check here </p><input type="checkbox" class="checkbox" id="get-location"  style="margin-top: 20px; margin-left: 8px;height: 10px;transform: scale(1.5); width: 10px; box-sizing: initial; border: 2px solid black;"></div>
+        </div>
+        <div style="margin-top: 50px; margin-left: 70px;">
+            <button type="button" class='btn blueClr' id="submit">SUBMIT</button><button style="left: 10px; position: relative;" type="button" class='btn yellowClr' id="clear">CLEAR</button>
+        </div>
+    </div>
+
+    <div id="dTable">
+    </div>
+
+    <div id="dCard">
+    </div>
+    </div>
+</body>
+
+</html>

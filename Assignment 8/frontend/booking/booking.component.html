@@ -1,0 +1,21 @@
+<h3 style="text-align: center;" *ngIf="arr.length>0">List of your reservations</h3>
+<div>
+<table class="col-sm-6 mt-4 table-container" style="background-color: white;text-align: center;border-radius: 5px;margin: 0 auto;font-size: 15px;" *ngIf="arr.length > 0">
+    <tr class="border-bottom">
+        <th class="alignCenter">#</th>
+        <th class="alignCenter minw1">Business Name</th>
+        <th class="alignCenter min2" >Date</th>
+        <th class="alignCenter min3">Time</th>
+        <th class="alignCenter min4">Email</th>
+      </tr>
+    <tr *ngFor="let d of arr; index as i" class="border-bottom">
+        <td class="alignCenter" *ngIf="d.name != undefined"><span><b>{{i+1}}</b></span></td>
+        <td class="alignCenter minw1" *ngIf="d.name != undefined">{{d.name}}</td>
+        <td class="alignCenter minw2" *ngIf="d.name != undefined">{{d.date}}</td>
+        <td class="alignCenter minw3" *ngIf="d.name != undefined">{{d.hours}}:{{d.mins}}</td>
+        <td class="alignCenter minw4" *ngIf="d.name != undefined">{{d.email}}</td>
+        <td class="alignCenter" *ngIf="d.name != undefined"><fa-icon [icon]="faTrashsh" (click)="deleteReservation(d.name)"></fa-icon></td>
+    </tr>
+</table>
+</div>
+<div class="col-sm-2 mt-5" *ngIf="arr.length ==0 || arr==undefined" style="background: white;color: red;text-align: center;font-size: 17px;margin: 0 auto;border-radius: 11px;">No reservations to show</div>

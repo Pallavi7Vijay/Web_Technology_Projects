@@ -1,0 +1,23 @@
+<body>
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand navbar-light \">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample" mdbCollapse>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mr-1">
+            <button class="navButton navButtonSearch btn" [ngClass]="selectBtn=='s'?'selected':'notSelected'" #searchBtn type="button" style="border-radius: 14px;"
+              [routerLink]="['search']" data-mdb-ripple-color="black" (click)="addStyle('s')">
+              Search
+            </button>
+          </li>
+          <li class="nav-item mr-1">
+            <button class="navButton navbuttonBookings btn" [ngClass]="selectBtn=='b'?'selected':'notSelected'" #bookingBtn style="border-radius: 14px;" [routerLink]="['booking']"
+              type="button" data-mdb-ripple-color="dark" (click)="addStyle('b')">
+              My booking
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</body>
